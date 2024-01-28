@@ -1,15 +1,14 @@
 import React, { useContext, useState, useEffect } from "react";
 import { ethers } from "ethers";
-import { contractABI, contractAddress } from "../Constant/constants.js";
 import * as Voting from "../../../Contracts/artifacts/contracts/Voting.sol/Voting.json";
 import { collection, getDocs, query, where } from "firebase/firestore";
 import { db } from "../Config/Firebase.js";
 const UserContext = React.createContext();
 
 export default function useUser() {
-  return useContext(UserContext);
+  return useContext(UserContext); 
 }
-
+contractAddress = "0xe9146BFa384289A7929f1CD17079c19ed5099e71";
 export function UserProvider({ children }) {
   const [currentUser, setCurrentUser] = useState({
     name: "N/A",
