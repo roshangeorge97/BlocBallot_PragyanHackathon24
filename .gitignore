@@ -1,0 +1,13 @@
+node_modules/
+TestReact/
+Voting System Design Website/
+Documentation/
+constants.js
+.idea/
+.env
+constant.js
+firebase.json
+
+# Hardhat files
+cache
+artifacts
