@@ -2,7 +2,7 @@
 
 ## Introduction
 
-BlocBallot is a revolutionary voting platform that leverages the power of blockchain technology to ensure secure and private elections. Built on top of the Cosmos blockchain using the CosmWasm smart contract framework, BlocBallot aims to eliminate voter manipulations and enhance the integrity of the electoral process.
+BlocBallot is a revolutionary voting platform that leverages the power of blockchain technology and AI to ensure secure and private elections. Built on top of the Cosmos blockchain using the CosmWasm smart contract framework, BlocBallot aims to eliminate voter manipulations and enhance the integrity of the electoral process.
 
 ## Problem Statement
 
@@ -10,8 +10,8 @@ Traditional voting systems often face challenges related to security, transparen
 
 ## Features
 
-- **Blockchain Security**: Utilizes the security features of the Cosmos blockchain to prevent tampering and ensure the integrity of the voting process.
-- **Privacy Protection**: Employs cryptographic techniques to safeguard voter privacy, making it impossible to trace individual votes back to specific users.
+- **Blockchain Security**: Utilizes the security features of the Cosmos blockchain to prevent tampering and ensure the integrity of the voting process, with AI biometric Auth.
+- **Privacy Protection**: Employs cryptographic and AI techniques to safeguard voter privacy, making it impossible to trace individual votes back to specific users.
 - **Transparency**: All transactions and voting records are stored on the blockchain, providing a transparent and auditable history of the election.
 - **User-Friendly Interface**: Built with ReactJS to offer an intuitive and user-friendly voting experience.
 
@@ -19,16 +19,15 @@ Traditional voting systems often face challenges related to security, transparen
 
 - [Repo](https://github.com/roshangeorge97/BlocBallot_PragyanHackathon24/)
 
-- [Live](#)
-
 ## Screenshots
 
-![Home Page](/screenshots/Screenshot(235).png "Home Page")
+![](/screenshots/a1.png)
 
-![](/screenshots/Screenshot(236).png)
+![](/screenshots/a2.png)
 
-![](/screenshots/Screenshot(237).png)
+![](/screenshots/a3.png)
 
+![](/screenshots/a4.png)
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -41,6 +40,9 @@ To get a local copy up and running follow these simple example steps.
 This is an example of how to list things you need to use the software and how to install them.
 * npm
 * metamask extension
+* Configured cosVm in metamask, if not yet check out: https://doc.cosvm.net/welcome-to-cosvm/user-guide/metamask-configuration
+* python
+* Ganache - For Local Testing
 
 ### Installation
 
@@ -48,36 +50,53 @@ _Below is an example of how you can instruct your audience on installing and set
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/roshangeorge97/LimpioVote
+   git clone https://github.com/roshangeorge97/BlocBallot_PragyanHackathon24
    ```
-2. Install NPM packages
+2. cd into repo
    ```sh
-   npm install
+   cd BlocBallot_PragyanHackathon24
    ```
-3. Start the React app
+#### Now we have three modules, lets start each step by step:
+
+3. AdminPanel - The Dashboard of Government Admins
    ```sh
-   npm start
+   cd AdminPanel
+   npm i
+   npm run dev
+   ```
+   
+4. Next you need to Fingerprint scanner API in python - To scan voters identity
+   #### 
+   ```sh
+   pip install requirements.txt
+   python app.py
+   ```
+   
+5. Download some bmp fingerprint images from here: https://fvs.sourceforge.net/fingerprint_bitmaps.zip
+   
+6. Finally VotingSystem - Where Voters cast votes
+   ```sh
+   cd VotingSystem
+   npm i
+   npm run dev
    ```
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-- At First, The Chairperson will be able to create the candidates. The chairperson wallet is the one, which was used to deploy the contract in Remix IDE.
-- The names of the candidates and thier votes will be displayed in the Candidates Tab.
-- The Voters can cast thier votes in the voters tab.
-- once the Election is complete. The data is removed from the site, not from Blockchain!XD
-
+- At First, Create Election, Register the Candidates and Add voters from Admin.
+- Run Python API
+- Login as Voter, by uploading fingerprint images(download link given above), and cast the votes!
 
 ## Built With
 
 - JavaScript
-- Python
-- Flask
 - NPM
 - CosVM
 - Solidity
 - TailwindCSS
-- Hardhat
+- Python
+- Flask
 
 ## Future Updates
 
