@@ -21,40 +21,6 @@ Traditional voting systems often face challenges related to security, transparen
 - **Transparency**: All transactions and voting records are stored on the blockchain, providing a transparent and auditable history of the election.
 - **User-Friendly Interface**: Built with ReactJS to offer an intuitive and user-friendly voting experience.
 
-## Creating a New Election
-
-#### 1. Copy the Code from the output
-
-![](/screenshots/c1.png)
-
-#### 2. Paste it as deploy.js, after that deploy using hardhat
-
-   ```sh
-   cd Contracts
-   npx hardhat compile
-   npx hardhat run --network cosvm scripts/deploy.ts
-   ```
-
-#### 3. You have Deployed your Election!
-
-## Workflow
-
-![](/screenshots/fc.png)
-
-## Links
-
-- [Repo](https://github.com/roshangeorge97/BlocBallot_PragyanHackathon24/)
-
-## Screenshots
-
-![](/screenshots/a1.png)
-
-![](/screenshots/a2.png)
-
-![](/screenshots/a3.png)
-
-![](/screenshots/a4.png)
-
 <!-- GETTING STARTED -->
 ## Getting Started
 
@@ -113,6 +79,41 @@ _Below is an example of how you can instruct your audience on installing and set
 - At First, Create Election, Register the Candidates and Add voters from Admin.
 - Run Python API
 - Login as Voter, by uploading fingerprint images(download link given above), and cast the votes!
+
+## Creating a New Election
+
+#### 1. Copy the Code from the output
+
+![](/screenshots/c1.png)
+
+#### 2. Paste it as deploy.js, after that deploy using hardhat
+
+   ```sh
+   cd Contracts
+   npx hardhat compile
+   npx hardhat run --network cosvm scripts/deploy.ts
+   ```
+
+#### 3. You have Deployed your Election!
+
+## Workflow
+
+![](/screenshots/fc.png)
+
+## Links
+
+- [Repo](https://github.com/roshangeorge97/BlocBallot_PragyanHackathon24/)
+
+## Screenshots
+
+![](/screenshots/a1.png)
+
+![](/screenshots/a2.png)
+
+![](/screenshots/a3.png)
+
+![](/screenshots/a4.png)
+
 
 ## Built With
 
