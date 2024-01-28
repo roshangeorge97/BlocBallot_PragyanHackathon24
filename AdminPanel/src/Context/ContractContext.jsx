@@ -1,6 +1,5 @@
 import React, { useContext, useState } from "react";
 import { ethers } from "ethers";
-import { contractABI, contractAddress } from "../constants/constants.js";
 import * as Voting from "../../../Contracts/artifacts/contracts/Voting.sol/Voting.json";
 
 const ContractContext = React.createContext();
