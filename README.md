@@ -1,3 +1,9 @@
+  <div align="center">
+  <a href="https://github.com/othneildrew/Best-README-Template">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
+  </div>
+
 # BlocBallot: Blockchain-Powered Voting Platform
 
 ## Introduction
@@ -14,6 +20,26 @@ Traditional voting systems often face challenges related to security, transparen
 - **Privacy Protection**: Employs cryptographic and AI techniques to safeguard voter privacy, making it impossible to trace individual votes back to specific users.
 - **Transparency**: All transactions and voting records are stored on the blockchain, providing a transparent and auditable history of the election.
 - **User-Friendly Interface**: Built with ReactJS to offer an intuitive and user-friendly voting experience.
+
+## Creating a New Election
+
+#### 1. Copy the Code from the output
+
+![](/screenshots/c1.png)
+
+#### 2. Paste it as deploy.js, after that deploy using hardhat
+
+   ```sh
+   cd Contracts
+   npx hardhat compile
+   npx hardhat run --network cosvm scripts/deploy.ts
+   ```
+
+#### 3. You have Deployed your Election!
+
+## Workflow
+
+![](/screenshots/fc.png)
 
 ## Links
 
@@ -97,6 +123,8 @@ _Below is an example of how you can instruct your audience on installing and set
 - TailwindCSS
 - Python
 - Flask
+
+## More Info: <a href="https://www.canva.com/design/DAF7Ek5bL5E/vqbiqHvvay46JoeT1jzXpw/edit?utm_content=DAF7Ek5bL5E&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">PPT Link</a>
 
 ## Future Updates
 
