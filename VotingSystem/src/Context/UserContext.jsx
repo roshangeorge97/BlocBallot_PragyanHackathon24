@@ -174,7 +174,7 @@ export function UserProvider({ children }) {
     } catch (error) {
       setError(error.message);
     } finally {
-      canVote(); 
+      canVote();
     }
   }
 

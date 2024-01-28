@@ -1,14 +1,12 @@
 import React, { useContext, useState } from "react";
 import { ethers } from "ethers";
-import * as Voting from "../../../Contracts/artifacts/contracts/Voting.sol/Voting.json";
-
+import { contractABI, contractAddress } from "../constants/constants.js";
 const ContractContext = React.createContext();
 
 export default function useContract() {
   return useContext(ContractContext);
 }
 
-const contractAddress="0xe9146BFa384289A7929f1CD17079c19ed5099e71";
 export function ContractProvider({ children }) {
   const [Candidates, setCandidates] = useState([]);
   const [Error, setError] = useState([]);
@@ -22,7 +20,7 @@ export function ContractProvider({ children }) {
       const signer = provider.getSigner();
       const contract = new ethers.Contract(
         contractAddress,
-        Voting.abi,
+        contractABI,
         signer 
       );
       const candidatesList = await contract.getAllVotesOfCandidates();
